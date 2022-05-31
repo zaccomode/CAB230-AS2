@@ -23,7 +23,8 @@ Run `npm install --save` to install dependencies.
 3. Save this file.
 
 ### 7. Creating self-signed keys
-Run the following command: `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/node-selfsigned.key -out /etc/ssl/certs/node-selfsigned.crt`.
+1. Run the following command: `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/node-selfsigned.key -out /etc/ssl/certs/node-selfsigned.crt`.
+2. Follow an instructions and enter information as required.
 
 ### 8. Adding a .env file
 1. Within the base directory of the app, create a file entitled `.env`, and paste the following contents: 
