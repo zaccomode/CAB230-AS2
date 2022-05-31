@@ -66,5 +66,18 @@ app.use((req, res, next) => {
     
 
 // RUN SERVER
-const port = process.env.PORT || 4242;
-app.listen(port, () => console.log('Running on port', port));
+
+// Run in HTTPS mode - requires self-signed certificate
+const https = require('https');
+const fs = require('fs');
+const privateKey = fs.readFileSync('/etc/ssl/private/node-selfsigned.key', 'utf-8');
+const certificate = fs.readFileSync('/etc/ssl/certs/node-selfsigned.crt', 'utf-8');
+
+const credentials = { 
+    key: privateKey,
+    cert: certificate
+};
+
+const server = https.createServer(credentials, app);
+const port = process.env.PORT || 443;
+server.listen(port, () => console.log('Running on port', port));
