@@ -16,6 +16,16 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `volcanoes`
+--
+
+/*!40000 DROP DATABASE IF EXISTS `volcanoes`*/;
+
+CREATE DATABASE `volcanoes` DEFAULT CHARACTER SET utf8mb4;
+
+USE `volcanoes`;
+
+--
 -- Table structure for table `users`
 --
 
