@@ -12,7 +12,7 @@ The repository for Isaac Shea's submission of the CAB230 AS2.
 1. Type `sudo mysql -u root -p`, then enter the Virtual Machine's password. This should open the mySQL command line.
 2. Use `CREATE DATABASE volcanoes_db;` to generate a new database, and `USE volcanoes_db;` to change to that database.
 3. Type `source volcanoes_schema.sql` to generate and populate the database with necessary information.
-4. Use `show tables;` to ensure this command worked. You should see Users and Volcanoes tables.
+4. Use `show tables;` to ensure this command worked. You should see `users` and `volcanoes` tables.
 
 ### 5. Installing dependencies
 Run `npm install --save` to install dependencies.
