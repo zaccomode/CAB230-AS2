@@ -14,26 +14,26 @@ The repository for Isaac Shea's submission of the CAB230 AS2.
 3. Type `source volcanoes_schema.sql` to generate and populate the database with necessary information.
 4. Use `show tables;` to ensure this command worked. You should see `users` and `volcanoes` tables.
 
-### 5. Installing dependencies
+### 5. Install dependencies
 Run `npm install --save` to install dependencies.
 
-### 6. Updating the Knexfile
+### 6. Update the Knexfile
 1. Open `knexfile.js` in Visual Studio Code (`right click > Open With Visual Studio Code`).
 2. Change the `connection > password` value to the VM's password.
 3. Save this file.
 
-### 7. Creating self-signed keys
+### 7. Create self-signed keys
 1. Run the following command: `sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/node-selfsigned.key -out /etc/ssl/certs/node-selfsigned.crt`.
-2. Follow an instructions and enter information as required.
+2. Follow any instructions and enter information as required.
 
-### 8. Adding a .env file
+### 8. Add an .env file
 1. Within the base directory of the app, create a file entitled `.env`, and paste the following contents: 
 ```bash
 PORT=443
 SECRET_KEY="secret key"
 ```
 
-### 9. Running the server
+### 9. Run the server
 1. Navigate to the root directory in the terminal by using `cd ..`.
 2. Use `sudo chown root CAB230-AS2-main`.
 3. Navigate back into the directory with `cd CAB230-AS2-main`.
